@@ -8,7 +8,7 @@ interface ProjectDetailProps {
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
   return (
-    <div className="max-w-4xl mx-auto py-12 px-8">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:py-12 sm:px-8">
       <div className="mb-8">
         <div className="flex items-center gap-2 text-indigo-600 mb-2">
           <Terminal size={18} />
@@ -16,7 +16,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
             Project {project.id}
           </span>
         </div>
-        <h2 className="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
           {project.title}
         </h2>
         <div className="prose prose-slate max-w-none">

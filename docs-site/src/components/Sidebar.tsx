@@ -10,7 +10,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ projects, selectedId, onSelect }) => {
   return (
-    <div className="w-80 h-screen sticky top-0 border-r border-slate-200 bg-slate-50 overflow-y-auto">
+    <div className="w-80 h-full border-r border-slate-200 bg-slate-50 overflow-y-auto relative">
       <div className="p-6">
         <div className="flex items-center gap-2 mb-8">
           <BookOpen className="text-indigo-600" size={24} />
